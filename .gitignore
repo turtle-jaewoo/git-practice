@@ -1,17 +1,52 @@
-# ignore a .a files
+# Prerequisites
+*.d
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
 *.a
+*.la
+*.lo
 
-# but do track lib.a, even though you're ignoring .a files above
-!lib.a
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
 
-# only ignore the TODO file in the current directory, not subdir/TODO
-/TODO
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
 
-# ignore all files in any directory name build
-build/
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
 
-#ignore doc/notes/txt. but not dec/server/arch.txt
-doc/*.txt
-
-#ignore all .pdf files in the doc/ directory and any of its subdirectories
-doc/**/*.pdf
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
